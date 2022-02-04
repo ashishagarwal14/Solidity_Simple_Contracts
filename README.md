@@ -21,3 +21,5 @@ you can see all previous winners using schemeId.
 This contract is not live on any mainnet, it's just for fun.
 
 Inspired by Lakshmi Chit Fund memes
+
+try out this on https://remix.ethereum.org/
