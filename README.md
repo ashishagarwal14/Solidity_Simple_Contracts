@@ -23,7 +23,6 @@
 
   Inspired by Lakshmi Chit Fund memes
 
-  try out this on https://remix.ethereum.org/
   
   # 2. My Ethereum Wallet smart contract in solidity 
   
@@ -39,3 +38,9 @@
   can send to any address or withdraw from wallet to his account address.
   
   Anyone can get balance of wallet
+
+
+
+
+#try out these contacts on https://remix.ethereum.org/
+  
