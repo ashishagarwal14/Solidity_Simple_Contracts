@@ -1,6 +1,6 @@
-# Solidity_Smart_Contracts
+# Solidity: Simple Smart_Contracts
 
-  # 1. Lottery smart contract in solidity
+  # 1. "Double it or lose it" smart contract in solidity
 
 
   smart_contacts/PaiseDoubleScheme.sol
