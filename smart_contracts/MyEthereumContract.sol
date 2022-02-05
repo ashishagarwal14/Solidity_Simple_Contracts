@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-3.0
 
-pragma solidity >=0.7.0 <0.9.0;
+
 /* MyEthereumWallet is a smart contract based personal use
    wallet. Functionality includes - anyone can add to your 
    wallet, you can receive from anyone,  Only owner (address
@@ -9,6 +9,9 @@ pragma solidity >=0.7.0 <0.9.0;
    balance of wallet.
    author: <ashish.agarwal.eee14@itbhu.ac.in>
 */
+
+pragma solidity >=0.7.0 <0.9.0;
+
 /// @title   with delegation.
 contract MyEthereumWallet {
     // declearation of variable to store the address of owner
@@ -24,7 +27,7 @@ contract MyEthereumWallet {
     // this function can only be accessed by the owner to transfer to any payable address
     // and any specified _amout
     function transferToAddress(address payable receiver, uint _amount) public returns (uint) {
-        require( msg.sender == walletOwner, "Only wallet owner can access this" );
+        require( msg.sender == walletOwner, "Only wallet owner can transer value from this wallet" );
         (receiver).transfer(_amount);
         return _amount;
     }
@@ -32,7 +35,7 @@ contract MyEthereumWallet {
     // this function can only be accessed by the owner to withdraw funds from wallet to
     // owner payable address
     function withdrawFromWallet( uint _amount) public returns (uint) {
-        require(msg.sender == walletOwner, "Only wallet owner can access this.");
+        require(msg.sender == walletOwner, "Only wallet owner can withdraw value from this wallet.");
         (walletOwner).transfer(_amount);
         return _amount;
     }
@@ -42,7 +45,7 @@ contract MyEthereumWallet {
         return address(this).balance;
     }
     
-    // uncomment below function for help while testing this contract
+    // uncomment below function for help, while testing this contract
     // function getAddressBalance() external view returns (uint) {
     //     return (msg.sender).balance;
     // }
