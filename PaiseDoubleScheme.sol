@@ -14,8 +14,8 @@ contract PaiseDoubleScheme {
         schemeId = 1;
     }
 
-    function getWinnerByScheme(uint schemeId) public view returns (address payable[] memory) {
-        return schemeHistory[schemeId];
+    function getWinnerByScheme(uint schemeid) public view returns (address payable[] memory) {
+        return schemeHistory[schemeid];
     }
 
     function getSchemeBalance() public view returns (uint) {
