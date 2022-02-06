@@ -28,7 +28,7 @@
   
   smart_contacts/PurchaseAgreement.sol
   
-  PurchaseAgreement is a smart contract based Agreenment to buy and sell real world Items using ethereum.
+  PurchaseAgreement is a smart contract based Agreement to buy and sell real world Items using ethereum.
   
   How It Works :
   
@@ -36,7 +36,7 @@
 
   example:
   
-    Seller can list "Book" for 1 eth, for this seller needs to deposit 2 eth as security amount while deploying the contract, then any seller can purchase the item by depositing 2 eth, once buyer receives the item and confirm, buyer will be returned eth as security amount. After ending purchase, buyer will be returned 3 eth (security amount 2 eth + sold amount 1 eth)
+    Seller can list "Book" for 1 eth, for this seller needs to deposit 2 eth as security amount while deploying the contract, then any buyer can purchase the item by depositing 2 eth, once buyer receives the item and confirm, buyer will be returned 1 eth as security amount. After ending purchase, buyer will be returned 3 eth (security amount 2 eth + sold amount 1 eth)
 
   Security: 
   
